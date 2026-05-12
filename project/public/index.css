@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap');
+
+@font-face {
+  font-family: 'Juana It';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('https://spintadigital.com/wp-content/uploads/2023/11/Juana-RegularIt.woff2') format('woff2');
+}
+
+:root {
+  /* Colors */
+  --primary-color: #6EC1E4;
+  --secondary-color: #54595F;
+  --text-color: #7A7A7A;
+  --accent-color: #FF9214; /* Orange */
+  --accent-secondary: #00B3B2; /* Teal */
+  --accent-red: #d65948;
+  --bg-dark: #141820;
+  --bg-light: #f5f5f5;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Typography */
+  --font-primary: 'Raleway', sans-serif;
+  --font-secondary: 'Juana It', serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-color);
+  background-color: var(--white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--black);
+  line-height: 1.2;
+}

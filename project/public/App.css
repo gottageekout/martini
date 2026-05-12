@@ -1,0 +1,45 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex-grow: 1;
+}
+
+/* Global Button Style */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn-dark {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.btn-dark:hover {
+  background-color: #333;
+}
+
+.btn-accent {
+  background-color: var(--accent-red);
+  color: var(--white);
+}
+
+.btn-accent:hover {
+  background-color: #333;
+}
+
+.section {
+  padding: 80px 5%;
+}

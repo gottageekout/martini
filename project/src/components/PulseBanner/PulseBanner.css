@@ -1,0 +1,53 @@
+.pulse-section {
+  background-color: var(--bg-dark);
+  padding: 80px 5%;
+  text-align: center;
+  /* Add curve overlay background logic from original if needed */
+  background-image: url('/assets/curve.png');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.pulse-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+
+.pulse-title {
+  font-family: var(--font-primary);
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 80px;
+  color: var(--white);
+  margin: 0;
+}
+
+.font-juana {
+  font-family: var(--font-secondary);
+  font-style: italic;
+  font-weight: 400;
+}
+
+.pulse-highlight {
+  background: var(--accent-color);
+  border-radius: 40px;
+  padding: 0px 15px 10px;
+  display: inline-block;
+  line-height: 1;
+}
+
+@media (max-width: 1024px) {
+  .pulse-title {
+    font-size: 5vw;
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 768px) {
+  .pulse-title {
+    font-size: 27px;
+    line-height: 45px;
+  }
+}

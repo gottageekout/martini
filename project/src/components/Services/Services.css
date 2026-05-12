@@ -1,0 +1,42 @@
+.services-section {
+  background-color: var(--bg-dark);
+  padding: 0 5% 80px;
+  margin-top: -20px; /* Slight overlap or continuation from pulse banner */
+}
+
+.services-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  opacity: 0.9;
+}
+
+.service-card {
+  padding: 30px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-title {
+  color: var(--white);
+  font-family: var(--font-primary);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+}

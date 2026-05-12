@@ -1,0 +1,88 @@
+.hero-section {
+  padding: 80px 5%;
+  background-color: var(--white);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-container {
+  display: flex;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  gap: 40px;
+}
+
+.hero-content {
+  flex: 1;
+  max-width: 600px;
+}
+
+.hero-title {
+  font-size: 55px;
+  font-weight: 800;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.hero-subtitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 30px;
+}
+
+.hero-description {
+  font-size: 1.3vw; /* Based on the original CSS */
+  line-height: 35px;
+  color: var(--text-color);
+  margin-bottom: 40px;
+}
+
+.hero-image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+  .hero-title {
+    font-size: 5vw;
+  }
+  
+  .hero-description {
+    font-size: 2.5vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-title {
+    font-size: 45px;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .hero-btn {
+    margin: 0 auto;
+  }
+}
