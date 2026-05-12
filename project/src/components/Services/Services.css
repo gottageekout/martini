@@ -1,5 +1,5 @@
 .services-section {
-  background-color: var(--bg-dark);
+  background-color: var(--black);
   padding: 0 5% 80px;
   margin-top: -20px; /* Slight overlap or continuation from pulse banner */
 }

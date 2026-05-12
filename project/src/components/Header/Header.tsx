@@ -9,14 +9,15 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="header">
-      <div className="header-container">
+    <div className="header-wrapper">
+      <header className="header">
+        <div className="header-container">
         {/* Logo */}
         <div className="logo-container">
           <a href="/">
             <img 
-              src="/assets/real_estate_logo.png" 
-              alt="Real Estate Agency" 
+              src="/assets/logo.webp" 
+              alt="Spinta Digital" 
               className="logo"
             />
           </a>
@@ -26,24 +27,23 @@ const Header: React.FC = () => {
         <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
           <ul className="nav-list">
             <li className="nav-item has-dropdown">
-              <a href="#solutions">Properties <span className="dropdown-icon">▼</span></a>
+              <a href="#solutions">Solutions <span className="dropdown-icon">▼</span></a>
               <ul className="dropdown">
-                <li><a href="#residential">Residential</a></li>
-                <li><a href="#commercial">Commercial</a></li>
-                <li><a href="#luxury">Luxury</a></li>
-                <li><a href="#rentals">Rentals</a></li>
+                <li><a href="#branding">Branding</a></li>
+                <li><a href="#creative">Creative Media</a></li>
+                <li><a href="#marketing">Marketing</a></li>
+                <li><a href="#technology">Technology</a></li>
               </ul>
             </li>
-            <li className="nav-item"><a href="#featured">Featured Listings</a></li>
-            <li className="nav-item"><a href="#market">Market Insights</a></li>
+            <li className="nav-item"><a href="#work">Our Work</a></li>
+            <li className="nav-item"><a href="#news">News and Events</a></li>
             <li className="nav-item"><a href="#blog">Blog</a></li>
-            <li className="nav-item"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
 
         {/* Call to Action & Mobile Toggle */}
         <div className="header-actions">
-          <a href="#enquire" className="btn btn-dark btn-sm d-none-mobile">Find a Home</a>
+          <a href="#enquire" className="btn btn-header d-none-mobile">Enquire Now</a>
           
           <button className="mobile-menu-toggle" onClick={toggleMenu} aria-label="Toggle Menu">
             {isMenuOpen ? '✕' : '☰'}
@@ -51,6 +51,7 @@ const Header: React.FC = () => {
         </div>
       </div>
     </header>
+  </div>
   );
 };
 

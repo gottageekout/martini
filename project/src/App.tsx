@@ -1,4 +1,3 @@
-import { ReactLenis } from 'lenis/react'
 
 import Header from './components/Header/Header'
 import Hero from './components/Hero/Hero'
@@ -8,16 +7,14 @@ import Services from './components/Services/Services'
 
 function App() {
   return (
-    <ReactLenis root>
-      <div className="app-container">
-        <Header />
-        <main className="main-content">
-          <Hero />
-          <PulseBanner />
-          <Services />
-        </main>
-      </div>
-    </ReactLenis>
+    <div className="app-container">
+      <Header />
+      <main className="main-content">
+        <Hero />
+        <PulseBanner />
+        <Services />
+      </main>
+    </div>
   )
 }
 

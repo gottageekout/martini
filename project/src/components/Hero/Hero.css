@@ -1,6 +1,6 @@
 .hero-section {
   padding: 80px 5%;
-  background-color: var(--white);
+  background-color: var(--black);
   position: relative;
   overflow: hidden;
 }
@@ -21,14 +21,14 @@
 .hero-title {
   font-size: 55px;
   font-weight: 800;
-  color: var(--black);
+  color: var(--white);
   margin-bottom: 20px;
 }
 
 .hero-subtitle {
   font-size: 20px;
   font-weight: 700;
-  color: var(--black);
+  color: var(--white);
   margin-bottom: 30px;
 }
 

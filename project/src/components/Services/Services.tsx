@@ -3,9 +3,9 @@ import './Services.css';
 
 const Services: React.FC = () => {
   const services = [
-    { id: 1, title: 'Property Buying' },
-    { id: 2, title: 'Property Selling' },
-    { id: 3, title: 'Property Management' },
+    { id: 1, title: 'Social Media Marketing' },
+    { id: 2, title: 'Performance Marketing' },
+    { id: 3, title: 'Influencer Marketing' },
   ];
 
   return (
