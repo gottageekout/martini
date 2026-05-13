@@ -7,12 +7,19 @@
   background-position: top center;
   background-repeat: no-repeat;
   background-size: contain;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pulse-container {
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .pulse-title {
@@ -21,7 +28,7 @@
   font-weight: 800;
   line-height: 80px;
   color: var(--white);
-  margin: 0;
+  margin: 0 0 60px 0;
 }
 
 .font-juana {
@@ -36,6 +43,31 @@
   padding: 0px 15px 10px;
   display: inline-block;
   line-height: 1;
+}
+
+.pulse-pills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  max-width: 900px;
+}
+
+.pulse-pill {
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 30px;
+  padding: 12px 24px;
+  color: var(--white);
+  font-size: 1.1rem;
+  font-family: var(--font-secondary);
+  font-style: italic;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.pulse-pill:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: var(--white);
 }
 
 @media (max-width: 1024px) {

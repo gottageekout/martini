@@ -1,0 +1,23 @@
+.sticky-scroll-container {
+  position: relative;
+  width: 100%;
+}
+
+.sticky-scroll-section {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  will-change: transform, opacity;
+  background-color: var(--black);
+}
+
+/* Ensure inner content is centered if needed, or let components handle it */
+.sticky-scroll-section > section {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
